@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trusted Co-Pilot</title>
+
+  <!-- Khula font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Background & grain -->
+  <div class="bg"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="top">
+    <div class="box header-row">
+      <a class="brand" href="#top" aria-label="AI360 home">
+        <img class="brand-mark" src="assets/ai360.svg" alt="" onerror="this.remove()"/>
+       
+      </a>
+
+      <div class="header-actions">
+        <button class="cta-btn" id="openContact">Get in touch ↗</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main class="main" id="home">
+    <!-- HERO -->
+    <section class="hero box">
+       <span class="brand-text">AI&nbsp;360</span>
+      <h1 class="title">Trusted Co-Pilot for Business Process Optimization</h1>
+      <p class="subtitle">
+        Operational excellence — secured on AWS infrastructure, measurable in figures, refined in delivery.
+      </p>
+    </section>
+
+    <!-- CLIENT RAIL (auto-scroll, pauses on hover) -->
+    <section class="clients">
+      <div class="box">
+        <div class="rail one-stroke" role="list" aria-label="Client list">
+          <div class="rail-track">
+            <span class="chip">UK Public Services AI Lab</span>
+            <span class="chip">EU Fintech Group</span>
+            <span class="chip">DACH Industrial Systems</span>
+            <span class="chip">Benelux Health Analytics</span>
+            <span class="chip">Midwest Energy Cloud</span>
+            <span class="chip">Nordic Retail Data Co.</span>
+            <!-- loop dup -->
+            <span class="chip" aria-hidden="true">UK Public Services AI Lab</span>
+            <span class="chip" aria-hidden="true">EU Fintech Group</span>
+            <span class="chip" aria-hidden="true">DACH Industrial Systems</span>
+            <span class="chip" aria-hidden="true">Benelux Health Analytics</span>
+            <span class="chip" aria-hidden="true">Midwest Energy Cloud</span>
+            <span class="chip" aria-hidden="true">Nordic Retail Data Co.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GET STARTED -->
+    <section class="started box" id="started">
+      <h2>Get started in 30 minutes</h2>
+
+      <div class="card-grid">
+        <!-- Seamless Start -->
+        <article class="card">
+          <div class="icon">
+            <!-- users -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3>Seamless Start</h3>
+          <p>From introduction to a working AI roadmap in just 30 minutes.</p>
+        </article>
+
+        <!-- Powerful -->
+        <article class="card">
+          <div class="icon">
+            <!-- bolt -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <h3>Powerful</h3>
+          <p>Up to 30× faster optimization with a bespoke AI audit and a measurable, outcome-focused strategy — with the option to reuse prior campaign knowledge.</p>
+        </article>
+
+        <!-- Secure -->
+        <article class="card">
+          <div class="icon">
+            <!-- database -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <ellipse cx="12" cy="5" rx="9" ry="3"/>
+              <path d="M3 5v6c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/>
+              <path d="M3 11v6c0 1.66 4.03 3 9 3s9-1.34 9-3v-6"/>
+            </svg>
+          </div>
+          <h3>Secure</h3>
+          <p>Encrypted AWS environments, with optional on-prem deployment for regulated industries.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ====== NEW: BOOK A CALL / ABOUT ====== -->
+    <section class="call box" id="book">
+      <h3 class="call-eyebrow">Explore what’s possible in a single session</h3>
+      <h2 class="call-title">Book a free 30-minute call</h2>
+      <p class="call-lead">
+        We’ll identify your highest-leverage automation opportunities and outline
+        a measurable plan for impact in weeks, not months.
+      </p>
+
+      <ul class="call-offer" aria-label="What we cover">
+        <li>Rapid AI audit of one process or workflow</li>
+        <li>Ops &amp; finance automation options with ROI ranges</li>
+        <li>Security approach with private AWS or on-prem options</li>
+      </ul>
+
+      <a class="cta-big"
+         href="https://calendly.com/luciamaistruk/30min?month=2025-09"
+         target="_blank" rel="noopener">
+        Book a free call ↗
+      </a>
+
+      <div class="call-about">
+        <strong>Who we are:</strong> AI360 is an applied-AI partner focused on
+        operational efficiency and resilient delivery. We combine audit-first strategy,
+        robust engineering, and secure deployment to turn automation into measurable outcomes.
+      </div>
+    </section>
+
+    <!-- FOLLOW -->
+    <section class="follow box" aria-label="Social links">
+      <div class="follow-right">
+        <a class="social" href="https://www.linkedin.com/company/108649028/admin/page-posts/published/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="social" href="https://www.youtube.com/@LuciaMaistruk" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="box footer-grid">
+      <!-- Left: Contact -->
+      <div class="foot-left">
+        <div class="foot-label">Contact</div>
+        <a class="foot-mail" href="mailto:info@ai360group.com">info@ai360group.com</a>
+        <div class="foot-actions">
+          <button class="pill-ghost" id="openContact2">Get in touch ↗</button>
+          <button class="pill-ghost" id="openAdvisor">Advisor Portal ↗</button>
+        </div>
+      </div>
+
+      <!-- Center: Legal -->
+      <nav class="foot-legal" aria-label="Legal">
+        <a href="#privacy">Privacy Policy</a>
+        <span class="dot">•</span>
+        <a href="#terms">Terms &amp; Conditions</a>
+      </nav>
+
+      <!-- Right: Location -->
+      <div class="foot-right">
+        <div class="foot-label">Location</div>
+        <address class="addr">
+          86–90 Paul Street, London<br>
+          United Kingdom, EC2A&nbsp;4NE
+        </address>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MODAL: GET IN TOUCH ================= -->
+  <div class="modal" id="contactModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="contactTitle">
+    <div class="modal-card">
+      <button class="modal-close" id="closeContact" aria-label="Close dialog">✕</button>
+
+      <h2 id="contactTitle" class="form-title">Help us understand your priorities</h2>
+      <p class="form-kicker">A few details help us route you to the right specialist.</p>
+
+      <form class="lead-form" id="contactForm" novalidate>
+        <div class="form-grid">
+          <!-- Title -->
+          <div class="form-field">
+            <label for="c-title">Title</label>
+            <select id="c-title" class="form-input" required>
+              <option value="">Select…</option>
+              <option>Mr.</option>
+              <option>Mrs.</option>
+              <option>Ms.</option>
+              <option>Miss</option>
+              <option>Dr.</option>
+              <option>Prof.</option>
+              <option>Sir</option>
+              <option>Lady</option>
+              <option>Lord</option>
+              <option>Dame</option>
+              <option>PhD Candidate</option>
+            </select>
+          </div>
+
+          <!-- Contact email -->
+          <div class="form-field">
+            <label for="c-email">Contact email</label>
+            <input id="c-email" type="email" class="form-input" placeholder="you@company.com" required />
+          </div>
+
+          <!-- Full name -->
+          <div class="form-field">
+            <label for="c-name">Full name</label>
+            <input id="c-name" type="text" class="form-input" placeholder="Name, Surname" required />
+          </div>
+
+          <!-- Role -->
+          <div class="form-field">
+            <label for="c-role">Your role in the company</label>
+            <input id="c-role" type="text" class="form-input" placeholder="Head of Ops, CTO, Partner…" />
+          </div>
+
+          <!-- Company -->
+          <div class="form-field">
+            <label for="c-company">Company</label>
+            <input id="c-company" type="text" class="form-input" placeholder="Enter company name" />
+          </div>
+
+          <!-- Website -->
+          <div class="form-field">
+            <label for="c-website">Company website</label>
+            <input id="c-website" type="url" class="form-input" placeholder="https://company.com" />
+          </div>
+
+          <!-- Company size -->
+          <div class="form-field">
+            <label for="c-size">Company size</label>
+            <select id="c-size" class="form-input" required>
+              <option value="">Select company size</option>
+              <option>Less than 20</option>
+              <option>20–50</option>
+              <option>50–100</option>
+              <option>100–500</option>
+              <option>More than 500</option>
+            </select>
+          </div>
+
+          <!-- Revenue -->
+          <div class="form-field">
+            <label for="c-revenue">Company’s annual revenue</label>
+            <select id="c-revenue" class="form-input" required>
+              <option value="">Select revenue range</option>
+              <option>Less than £100K</option>
+              <option>£100K–£600K</option>
+              <option>£600K–£1M</option>
+              <option>£1M–£5M</option>
+              <option>More than £5M</option>
+            </select>
+          </div>
+
+          <!-- Budget -->
+          <div class="form-field">
+            <label for="c-budget">Project budget</label>
+            <select id="c-budget" class="form-input" required>
+              <option value="">Select budget range</option>
+              <option>Less than £10K</option>
+              <option>£10K–£50K</option>
+              <option>£50K–£100K</option>
+              <option>More than £100K</option>
+            </select>
+          </div>
+
+          <!-- Services -->
+          <div class="form-field">
+            <label for="c-services">What services are you interested in?</label>
+            <select id="c-services" class="form-input" required>
+              <option value="">Select service</option>
+              <option>AI Audit &amp; Strategy</option>
+              <option>AI Co-Pilot / Agents</option>
+              <option>AI Finance Automation</option>
+              <option>R&amp;D Tax Relief Claims</option>
+              <option>Custom CRM / Data Apps</option>
+              <option>Legal-Tech Experiments</option>
+            </select>
+          </div>
+
+          <!-- Message -->
+          <div class="form-field form-span2">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" rows="5" class="form-input" placeholder="Share context, goals, timelines…"></textarea>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button class="pill-ghost primary" type="submit">Send inquiry</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ============== MODAL: ADVISOR PORTAL (Become an expert) ============== -->
+  <div class="modal" id="advisorModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="advisorTitle">
+    <div class="modal-card wide">
+      <button class="modal-close" id="closeAdvisor" aria-label="Close dialog">✕</button>
+
+      <h2 id="advisorTitle" class="form-title">Advisor Portal — Become an expert</h2>
+      <p class="form-kicker">Share your capabilities so we can route you to suitable mandates.</p>
+
+      <form class="lead-form" id="advisorForm" novalidate>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="a-name">Full name</label>
+            <input id="a-name" class="form-input" placeholder="Name, Surname" required />
+          </div>
+
+          <div class="form-field">
+            <label for="a-email">Contact email</label>
+            <input id="a-email" type="email" class="form-input" placeholder="you@company.com" required />
+          </div>
+
+          <div class="form-field">
+            <label for="a-linkedin">LinkedIn URL</label>
+            <input id="a-linkedin" class="form-input" placeholder="https://linkedin.com/in/you" />
+          </div>
+
+          <div class="form-field">
+            <label for="a-location">Location</label>
+            <input id="a-location" class="form-input" placeholder="City, Country" />
+          </div>
+
+          <div class="form-field form-span2">
+            <label>Areas of expertise</label>
+            <div class="tags">
+              <label><input type="checkbox"> <span>AI Audit &amp; Strategy</span></label>
+              <label><input type="checkbox"> <span>AI Co-Pilot / Agents</span></label>
+              <label><input type="checkbox"> <span>AI Finance Automation</span></label>
+              <label><input type="checkbox"> <span>Custom CRM / Data Apps</span></label>
+              <label><input type="checkbox"> <span>Data Engineering</span></label>
+              <label><input type="checkbox"> <span>MLOps &amp; Deployment</span></label>
+              <label><input type="checkbox"> <span>GenAI Safety / Guardrails</span></label>
+              <label><input type="checkbox"> <span>Cloud (AWS)</span></label>
+              <label><input type="checkbox"> <span>Security &amp; Compliance</span></label>
+              <label><input type="checkbox"> <span>Front-end / UX</span></label>
+              <label><input type="checkbox"> <span>R&amp;D Tax Relief</span></label>
+              <label><input type="checkbox"> <span>Legal-Tech</span></label>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="a-langs">Languages</label>
+            <input id="a-langs" class="form-input" placeholder="e.g., English, German, French" />
+          </div>
+
+          <div class="form-field">
+            <label for="a-availability">Availability</label>
+            <select id="a-availability" class="form-input">
+              <option value="">Select availability</option>
+              <option>Up to 1 day / week</option>
+              <option>1–2 days / week</option>
+              <option>3–4 days / week</option>
+              <option>Full-time (contract)</option>
+              <option>Ad-hoc (on demand)</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="a-cv">CV / Portfolio URL</label>
+            <input id="a-cv" class="form-input" placeholder="Link to CV or portfolio (GDrive, Notion, etc.)" />
+          </div>
+
+          <div class="form-field">
+            <label for="a-notes">Notes</label>
+            <textarea id="a-notes" rows="3" class="form-input" placeholder="Anything else we should know?"></textarea>
+          </div>
+
+          <div class="form-field form-span2 checkbox">
+            <input id="a-consent" type="checkbox">
+            <label for="a-consent">I agree to be contacted about suitable mandates and scheduling.</label>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button class="pill-ghost primary" type="submit">Submit profile</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ============ JS: background, modals, fake submit ============ -->
+  <script>
+    // Cursor glow (respects reduced motion)
+    const glow = document.querySelector('.bg-glow');
+    const prefersReduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!prefersReduce && glow) {
+      window.addEventListener('pointermove', (e) => {
+        glow.style.setProperty('--gx', e.clientX + 'px');
+        glow.style.setProperty('--gy', e.clientY + 'px');
+      });
+    }
+
+    function openModal(el){ el.setAttribute('aria-hidden','false'); el.classList.add('is-open'); document.body.style.overflow='hidden'; }
+    function closeModal(el){ el.setAttribute('aria-hidden','true'); el.classList.remove('is-open'); document.body.style.overflow=''; }
+
+    // Contact modal
+    const contactModal = document.getElementById('contactModal');
+    document.getElementById('openContact').addEventListener('click', () => openModal(contactModal));
+    document.getElementById('openContact2').addEventListener('click', () => openModal(contactModal));
+    document.getElementById('closeContact').addEventListener('click', () => closeModal(contactModal));
+    contactModal.addEventListener('click', (e)=>{ if(e.target === contactModal) closeModal(contactModal); });
+
+    // Advisor modal
+    const advisorModal = document.getElementById('advisorModal');
+    document.getElementById('openAdvisor').addEventListener('click', () => openModal(advisorModal));
+    document.getElementById('closeAdvisor').addEventListener('click', () => closeModal(advisorModal));
+    advisorModal.addEventListener('click', (e)=>{ if(e.target === advisorModal) closeModal(advisorModal); });
+
+    document.addEventListener('keydown', (e)=>{
+      if(e.key === 'Escape'){
+        if (contactModal.classList.contains('is-open')) closeModal(contactModal);
+        if (advisorModal.classList.contains('is-open')) closeModal(advisorModal);
+      }
+    });
+
+    // Fake submits (replace with real handling later)
+    document.getElementById('contactForm').addEventListener('submit', (e)=>{
+      e.preventDefault();
+      closeModal(contactModal);
+      alert('Thanks — we’ve received your inquiry.');
+    });
+    document.getElementById('advisorForm').addEventListener('submit', (e)=>{
+      e.preventDefault();
+      closeModal(advisorModal);
+      alert('Thanks — your advisor profile has been submitted.');
+    });
+  </script>
+</body>
+</html>
