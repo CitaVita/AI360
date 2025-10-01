@@ -73,18 +73,16 @@
       <h1 class="title">
         Trusted <span class="holo-text">AI Co-Pilot for Business</span> Process Optimization
       </h1>
-
-      <!-- VALUE PROP -->
+ <!-- VALUE PROP -->
       <section class="value-prop" aria-label="Value proposition">
         <p class="value-prop__text">
           We design, audit, and deploy AI workflows that cut costs, accelerate operations,
           and scale securely — from first pilot to enterprise-level automation.
         </p>
       </section>
+     
 
-      <p class="subtitle typewriter">
-        Operational excellence — secured on AWS infrastructure, measurable in figures, refined in delivery.
-      </p>
+      
     </section>
 
     
@@ -112,6 +110,18 @@
     </div>
   </div>
 </section>
+
+
+<!-- ================= HOW IT WORKS CICLE ================= -->
+
+
+
+<!-- ================= END  HOW IT WORKS CICLE ================= -->
+
+
+
+
+<!-- ================= OUR SERVICES ================= -->
 
 
 
@@ -159,7 +169,7 @@
     <!-- ================= BOOK A CALL ================= -->
     <section class="call box" id="book">
       <h3 class="call-eyebrow">Explore what’s possible in a single session</h3>
-      <h2 class="call-title">Book a free 30-minute call</h2>
+      <h2 class="call-title">Book a Free 30-minute call</h2>
       <p class="call-lead">
         We’ll identify your highest-leverage automation opportunities and outline
         a measurable plan for impact in weeks, not months.
@@ -174,7 +184,7 @@
       <a class="cta-hero cta-hero--outline"
          href="https://calendly.com/luciamaistruk/30min?month=2025-09"
          target="_blank" rel="noopener">
-        Book a free call
+        Book a Free Call
       </a>
     </section>
 
@@ -531,5 +541,91 @@
     ensureGoogle();
   })();
   </script>
+
+
+<script>
+/* Tabs behavior + animated vertical indicator */
+(function(){
+  const strip = document.querySelector('.services__tabs');
+  if (!strip) return;
+
+  const tabs  = [...strip.querySelectorAll('.services__tab')];
+  const ind   = strip.querySelector('.services__indicator');
+  const panels= [...document.querySelectorAll('.services__panel')];
+
+  function activate(idx){
+    tabs.forEach((t,i)=>{
+      const on = i === idx;
+      t.classList.toggle('is-active', on);
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      panels[i].classList.toggle('is-active', on);
+    });
+
+    // move the indicator to the active tab (left-side, vertical blue line)
+    const active = tabs[idx];
+    const r = active.getBoundingClientRect();
+    const s = strip.getBoundingClientRect();
+    ind.style.height = r.height + 'px';
+    ind.style.transform = `translateY(${active.offsetTop - strip.firstElementChild.offsetTop + 14}px)`; // 14px padding top
+  }
+
+  // init
+  activate(0);
+  tabs.forEach((tab, i)=> tab.addEventListener('click', ()=> activate(i)));
+  window.addEventListener('resize', ()=> {
+    const current = tabs.findIndex(t => t.classList.contains('is-active'));
+    if (current >= 0) activate(current);
+  });
+})();
+</script>
+
+
+
+<!-- ===== -->
+
+<script>
+(function(){
+  const root   = document.querySelector('#our-services');
+  if(!root) return;
+
+  const tabs   = [...root.querySelectorAll('.svc__tab')];
+  const panels = [...root.querySelectorAll('.svc__panel')];
+  const accent = root.querySelector('.svc__accent');
+  const tabsWrap = root.querySelector('.svc__tabs');
+
+  function moveAccent(toEl){
+    const r = toEl.getBoundingClientRect();
+    const wrapR = tabsWrap.getBoundingClientRect();
+    accent.style.height = r.height + 'px';
+    // place the accent at the RIGHT edge of the active tab
+    const x = (toEl.offsetLeft + toEl.offsetWidth) - 1; // -1 so it hugs the edge
+    accent.style.transform = `translateX(${x}px)`;
+  }
+
+  function activate(i){
+    tabs.forEach((t,idx)=>{
+      const on = idx === i;
+      t.classList.toggle('is-active', on);
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      panels[idx].classList.toggle('is-active', on);
+    });
+    moveAccent(tabs[i]);
+  }
+
+  // init
+  activate(0);
+
+  // events
+  tabs.forEach((t,i)=> t.addEventListener('click', ()=> activate(i)));
+  window.addEventListener('resize', ()=>{
+    const current = tabs.findIndex(t=>t.classList.contains('is-active'));
+    if(current>-1) moveAccent(tabs[current]);
+  });
+})();
+</script>
+
+
+
+
 </body>
 </html>
